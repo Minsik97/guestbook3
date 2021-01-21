@@ -81,7 +81,7 @@ public class GuestbookVo {
 		this.content = content;
 	}
 
-	public String getRegDate() {
+	public String getRegdate() {
 		return reg_date;
 	}
 

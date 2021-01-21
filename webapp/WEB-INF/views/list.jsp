@@ -31,25 +31,23 @@
 			
 		</table>
 		<br>
-		
-		<!-- action -->
-		<input type="hidden" name="action" value="add"> 
+	
 	</form>
 	<h2>리스트</h2>
 	<!-- 삭제 코드 -->
-		<c:forEach items="${gbList}" var="gbL">
+		<c:forEach items="${gbList}" var="gbVo">
 		<table border="2">
 			<tr>
-				<td>${gbL.no }</td>
-				<td>${gbl.name }</td>
-				<td>${gbl.regdate }</td>
+				<td>${gbVo.no }</td>
+				<td>${gbVo.name }</td>
+				<td>${gbVo.regdate }</td>
 				
 			</tr>
 			<tr>
-				<td colspan="4">${gbL.content }</td>
+				<td colspan="4">${gbVo.content }</td>
 			</tr>
 			<tr>
-				<td><a href="/guestbook3/gb/deleteForm?no=${gbL.no }">삭제</a></td>
+				<td><a href="/guestbook3/gb/deleteForm?no=${gbVo.no }">삭제</a></td>
 			</tr>
 		</table>
 		<br>
